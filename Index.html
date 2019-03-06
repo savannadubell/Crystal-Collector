@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="Assets/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="Assets/reset.css"> -->
+</head>
+<body>
+	<div class="header">
+		<h1>Savanna's Crystal Collector</h1>
+	</div>
+	<div class="instructions">
+		<h3>Instructions for the Game</h3>
+		</br>
+		<ol>
+			<li>The computer will give you random number at the start of the game.<span>"Number To Find"</span></li>
+			<li>There are four crystals below.</li>
+			<ul>
+                <li id="yellow">Yellow</li>
+                <li id="red">Red</li>
+                <li id="blue">Blue</li>
+				<li id="green">Green</li>
+			</ul>
+			<li>When you click on a crystal, they will add a specific amount of points to your score.</li>
+			<li>You will win the game by matching your total score to the random number.</li>
+			<li>You will lose the game if your total score goes above the random number.</li>
+			<li>Each crystals value is hidden from you until you click on the gems.</li>
+			<li>Each time the game starts the game will change each crystals value will change.</li>
+		</ol>
+	</div>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
+	</div>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
+	</div>
+	<div class="gems">
+		<img src="Assets/Images/Blue_Gem.png" class=rockImage id="bigBlue" alt="Blue Gem">
+		<img src="Assets/Images/Green_Gem.png" class=rockImage id="bigGreen" alt="Green Gem">
+		<img src="Assets/Images/Red_Gem.jpg" class=rockImage id= "bigRed" alt="Red Gem">
+		<img src="Assets/Images/Yellow_Gem.jpg" class=rockImage id= "bigYellow" alt="Yellow Gem">
+	</div>
+	<div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="Assets/code.js"></script>
+</body>
+</html>
